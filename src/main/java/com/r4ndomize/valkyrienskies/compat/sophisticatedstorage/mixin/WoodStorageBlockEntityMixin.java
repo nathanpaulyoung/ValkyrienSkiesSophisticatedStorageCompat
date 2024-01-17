@@ -1,10 +1,10 @@
-package com.dwayn.valkyrienskies.compat.sophisticatedstorage.mixin;
+package com.r4ndomize.valkyrienskies.compat.sophisticatedstorage.mixin;
 
 import net.minecraft.world.Clearable;
 import net.p3pp3rf1y.sophisticatedstorage.block.WoodStorageBlockEntity;
 import org.spongepowered.asm.mixin.Mixin;
 
-import com.dwayn.valkyrienskies.compat.sophisticatedstorage.mixin.WoodStorageBlockEntityAccessor;
+import com.r4ndomize.valkyrienskies.compat.sophisticatedstorage.mixin.WoodStorageBlockEntityAccessor;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -13,12 +13,6 @@ import org.apache.logging.log4j.Logger;
 public abstract class WoodStorageBlockEntityMixin implements Clearable {
 
     private static final Logger LOGGER = LogManager.getLogger();
-
-    // public void clearContent() {
-    //     // Implement the logic you want when Clearable.clearContent() is called.
-    //     // For example, you can call setPacked(false) here if that's appropriate.
-    //     this.setPacked(true);
-    // }
 
     public void clearContent() {
         // Create a new Throwable to inspect the stack trace

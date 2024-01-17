@@ -1,4 +1,4 @@
-package com.dwayn.valkyrienskies.compat.sophisticatedstorage.mixin;
+package com.r4ndomize.valkyrienskies.compat.sophisticatedstorage.mixin;
 
 import net.p3pp3rf1y.sophisticatedstorage.block.WoodStorageBlockEntity;
 import org.spongepowered.asm.mixin.Mixin;
