@@ -1,4 +1,4 @@
-package com.dwayn.valkyrienskies.compat.sophisticatedstorage;
+package com.r4ndomize.valkyrienskies.compat.sophisticatedstorage;
 
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.ModList;

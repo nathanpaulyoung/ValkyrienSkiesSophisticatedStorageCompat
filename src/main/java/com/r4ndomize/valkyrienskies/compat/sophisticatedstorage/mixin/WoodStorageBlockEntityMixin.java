@@ -1,10 +1,9 @@
-package com.dwayn.valkyrienskies.compat.sophisticatedstorage.mixin;
+package com.r4ndomize.valkyrienskies.compat.sophisticatedstorage.mixin;
 
 import net.minecraft.world.Clearable;
 import net.p3pp3rf1y.sophisticatedstorage.block.WoodStorageBlockEntity;
 import org.spongepowered.asm.mixin.Mixin;
-
-import com.dwayn.valkyrienskies.compat.sophisticatedstorage.mixin.WoodStorageBlockEntityAccessor;
+import org.spongepowered.asm.mixin.Shadow;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
@@ -14,11 +13,7 @@ public abstract class WoodStorageBlockEntityMixin implements Clearable {
 
     private static final Logger LOGGER = LogManager.getLogger();
 
-    // public void clearContent() {
-    //     // Implement the logic you want when Clearable.clearContent() is called.
-    //     // For example, you can call setPacked(false) here if that's appropriate.
-    //     this.setPacked(true);
-    // }
+    @Shadow protected abstract void setPacked(boolean packed);
 
     public void clearContent() {
         // Create a new Throwable to inspect the stack trace
@@ -35,8 +30,8 @@ public abstract class WoodStorageBlockEntityMixin implements Clearable {
             // items when VS relocates the block by destroying the instance
             // at the current location
             if (callerClassName.startsWith("org.valkyrienskies")) {
-                    LOGGER.warn("EurekaStorageCompat: packing SophisticatedStorage Block Entity to prep for relocation");
-                    ((WoodStorageBlockEntityAccessor) this).callSetPacked(true);
+                    LOGGER.debug("ValkyrienStorageCompat: packing SophisticatedStorage Block Entity to prep for relocation");
+                    this.setPacked(true);
             }
         }
 
