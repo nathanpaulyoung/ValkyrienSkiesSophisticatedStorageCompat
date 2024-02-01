@@ -4,7 +4,6 @@
     "package": "com.r4ndomize.valkyrienskies.compat.sophisticatedstorage.mixin",
     "refmap": "valkyrienskies.compat.sophisticatedstorage.refmap.json",
     "mixins": [
-      "WoodStorageBlockEntityAccessor",
       "WoodStorageBlockEntityMixin"
     ],
     "client": [],
