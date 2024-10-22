@@ -4,7 +4,5 @@ Just a small, simple mod to fix duplication of items in Sophisticated Storage co
 
 A compatibility fix in SophisticatedStorage or ValkyrienSkies 2 would be a preferrable approach, but until that is in place, this mod can bridge the gap.
 
-This works by 
-
 ## Version Support
-So far this has only been built for Minecraft 1.19.2 to patch Sophisticated Storage 0.8 and should work with any version of Valkyrien Skies 2, but it may also work with other versions of Sophisticated Storage or Minecraft. If anyone needs a specific version, open an issue and let me know and I will be happy to build/publish it.
+Updated for Minecraft 1.21.1 to patch Sophisticated Storage 0.10 and should work with any version of Valkyrien Skies 2. 1.18 and 1.19 support can be found on the [upstream repository](https://github.com/dwayn/ValkyrienSkiesSophisticatedStorageCompat/releases) or on [Curseforge](https://www.curseforge.com/minecraft/mc-mods/valkyrienskiessophisticatedstoragecompat).
